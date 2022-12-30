@@ -1,15 +1,17 @@
 public class ArrayCopyExample {
-    public static void main(String[] args){
-        String[] oldStrArray = {"java", "array", "copy"};
+    public static void main(String[] args) {
+        String[] oldStrArary = {"Java", "배열.array", "copy"};
         String[] newStrArray = new String[5];
 
-        System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
+        System.arraycopy(oldStrArary, 0, newStrArray, 0 , oldStrArary.length);
 
-//        for(int i = 0; i<newStrArray.length; i++){
-//            System.out.println(newStrArray[i] + ",");
+//        for(int i = 0; i < newStrArray.length; i++){
+//            System.out.print(newStrArray[i] + ", ");
 //        }
-        for(String str: newStrArray){
-            System.out.println(str);
+
+        //foreach 문
+        for (String i: newStrArray) {
+            System.out.print(i + ", ");
         }
     }
 }
